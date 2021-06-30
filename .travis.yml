@@ -1,0 +1,12 @@
+language: go
+dist: bionic
+arch:
+  - ppc64le
+go:
+  - 1.16.x
+branches:
+  only:
+    - "v0.19.2"
+script: 
+  - go build -v -o operator ./cmd/manager
+  - go test -v ./...
