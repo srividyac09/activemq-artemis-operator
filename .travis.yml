@@ -6,13 +6,7 @@ arch:
 go:
   - 1.16.x
   
-
-  
 script: 
   - go build -v -o operator ./cmd/manager
   - go test -v ./...
   
- branches:
-  only:
-    - master
-    - "v0.19.2"
