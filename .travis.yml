@@ -5,6 +5,11 @@ arch:
   
 go:
   - 1.16.x
+ 
+on:
+  push:
+    tags:
+      - 'v*'
 script: 
   - go build -v -o operator ./cmd/manager
   
