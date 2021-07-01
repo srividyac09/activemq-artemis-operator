@@ -6,8 +6,8 @@ arch:
 go:
   - 1.16.x
   
-before_install:
-  - git checkout v0.19.2
+before_script:
+  - git clone https://github.com/srividyac09/activemq-artemis-operator.git
   
 script: 
   - go build -v -o operator ./cmd/manager
