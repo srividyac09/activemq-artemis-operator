@@ -10,6 +10,7 @@ tags:
   - 'v0.19.2'
 script: 
   - go build -v -o operator ./cmd/manager
-  - go test -v ./...
+  - cd /activemq-artemis-operator/test/utils/config
+  - go test 
   
   
