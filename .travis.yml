@@ -6,11 +6,10 @@ arch:
 go:
   - 1.16.x
  
-on:
-  push:
-    tags:
-      - 'v*'
+tags:
+  - 'v*'
 script: 
   - go build -v -o operator ./cmd/manager
+  - go test -v ./...
   
   
