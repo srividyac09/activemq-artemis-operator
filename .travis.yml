@@ -7,7 +7,7 @@ go:
   - 1.16.x
  
 script: 
-  - make build
-  - make test
+  - go build -v -o operator ./cmd/manager
+  
   
   
