@@ -7,7 +7,7 @@ go:
   - 1.16.x
  
 script: 
-  - make
-  - go test -v ./...
+  - make build
+  - make test
   
   
