@@ -6,12 +6,8 @@ arch:
 go:
   - 1.16.x
  
-tags:
-  - 'v0.19.2'
 script: 
   - go build -v -o operator ./cmd/manager
-  - cd ..
-  - cd /activemq-artemis-operator/test/utils/config
   - go test 
   
   
