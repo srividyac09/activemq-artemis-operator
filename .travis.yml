@@ -4,10 +4,11 @@ arch:
   - ppc64le
   
 go:
-  - 1.16.x
+  - 1.16
  
 script: 
   - go build -v -o operator ./cmd/manager
+  - go test -v ./...
   
   
   
